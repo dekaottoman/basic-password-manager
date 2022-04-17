@@ -247,7 +247,7 @@ def list_password(root, username):
     list_canvas.place(relheight=0.8,relwidth=1,relx=0.5,rely=0.475,anchor=CENTER)
 
     scrollbar = ttk.Scrollbar(list_canvas)
-    scrollbar.place(relheight=1,relwidth=0.5,rely=0.5,relx=0.975,anchor=CENTER)
+    scrollbar.place(relheight=1,relwidth=0.05,rely=0.5,relx=0.975,anchor=CENTER)
     mylist = tk.Listbox(list_canvas, yscrollcommand = scrollbar.set ,bg="#f0f0f0")
     for i in data:
         mylist.insert(END, "Password Title : %s"%i[1])
